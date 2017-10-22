@@ -1,0 +1,11 @@
+/*
+ Just print as Hello c
+*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ clrscr();
+ printf("Hello c");
+ return(0);
+}
