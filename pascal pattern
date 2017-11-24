@@ -1,0 +1,27 @@
+/*
+ 1
+ 12
+ 123
+ 1234
+ 12345
+*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int i,j,k,r;
+ clrscr();
+ printf("Enter r");
+ scanf("%d",&r);
+ for(i=1;i<=r;i++)
+ {
+  k=1;
+  for(j=1;j<=i;j++)
+  {
+   printf("\t %d",k);
+   k++;
+  }
+  printf("\n");
+ }
+ return(0)
+}
