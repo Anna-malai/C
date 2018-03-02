@@ -1,0 +1,24 @@
+#include <stdio.h>
+  
+int main() 
+{ 
+    int arr[10]; 
+    int sum,product,i,n;
+  
+    /*Read array elements*/
+    scanf("%d",&n);
+     
+    for(i=0; i<n; i++) 
+    {  
+        scanf("%d",&arr[i]); 
+    }
+sum=0;
+product=1;
+for(i=0;i<10;i++)
+{
+ sum=sum+arr[i];
+  product=product*arr[i];
+}
+printf("Sum of array is:%d\n",sum); 
+printf("Product of array is:%d",product);
+}
