@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() 
+{
+int j,n, array[50];
+for(j=0;j<50;++j)
+scanf("%d",&array[j]); /*storing the elements of array from test case */
+
+int even[50], odd[50];
+int e = 0 , d = 0; /* e and d is for counting number of even or odd) */  
+int i=0,k=0;
+for(j=0;j<n;j++)
+{
+  if(array[j]%2==0)
+  {
+  even[i]=array[j];
+    e=e+1;
+  i++;
+  }
+  else
+  {
+   odd[k]=array[j];
+    d=d+1;
+    k++;
+  }
+}
+ printf("Even array: ");
+   for(i= 0; i< e; i++)
+      printf("%d  ", even[i]);
+	    
+printf("\n");
+  printf("Odd array: ");
+   for(i= 0; i< d; i++)
+      printf("%d  ", odd[i]);   
+   
+}
