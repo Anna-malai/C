@@ -1,0 +1,19 @@
+/*
+Input:
+ Given days as Input
+ 800
+ Output:
+  seperated as years,months,days
+  YEARS: 2 MONTH: 2 DAYS: 10
+*/
+#include <stdio.h>
+int main()
+{
+int days, years, month;
+scanf("%d", &days); /* Total number of days entered from the test case */
+years=days/365;
+days=days%365;
+month=days/30;
+days=days%30;
+printf("YEARS: %d MONTH: %d DAYS: %d",  years, month, days);
+}
