@@ -1,0 +1,33 @@
+/*
+  Input:
+    costprice cp=600.00
+    selling price sp=670.00
+  Output:
+    profit amount: 70.00
+*/
+#include <stdio.h>
+int main()  
+{  
+float CP,SP, PLamt; /*CP is Cost Price and SP is Selling Price, PLamt total profit/loss  */    
+int flag;
+scanf("%f %f", &CP, &SP); /*input taken from test case data */
+    
+    
+    
+if(SP>CP)
+{
+  flag=1;
+  PLamt=SP-CP;
+}
+else if(SP<CP)
+{
+  flag=0;
+  PLamt=CP-SP;
+}
+if (flag == 0)
+  printf("Loss amount : Rs. %.2f", PLamt);  
+else if (flag == 1)
+  	  printf("Profit amount : Rs. %.2f", PLamt);
+else
+	  printf("No profit No loss");  
+} 
