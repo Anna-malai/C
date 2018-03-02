@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() 
+{
+int j, array[50], num;
+for(j=0;j<n;++j)
+scanf("%d",&array[j]);
+scanf("%d", &num); /* the number to find */
+int count=0; /*to store number of occurrence of the given num */
+for(j=0;j<n;j++)
+{
+ if(array[j]==num)
+     count=count+1;
+}
+printf("The number %d occurs %d times", num, count);
+   
+}
