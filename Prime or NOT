@@ -1,0 +1,30 @@
+/*
+ PRime or not
+ Input:
+  17
+  15
+  Output:
+    Prime
+    Notprime
+*/
+#include <stdio.h>
+int main(){
+
+    int num, flag=0; /*flag is used to take decision */ 
+    scanf("%d",&num); /*input is given from test case */
+    
+int i,c=0;
+for(i=1;i<=num;i++)
+ {
+  if(num%i==0)
+     c++;
+ }
+ if(c==2)
+  flag=0;
+ else
+   flag=1;
+if(flag == 1)
+        printf("NOT PRIME");
+   else
+        printf("PRIME");
+}
