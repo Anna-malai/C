@@ -1,0 +1,25 @@
+/*
+ Triangle is valid or not valid
+ Condition for triangle=> a+b+c=180
+ Input:
+   90+60+30
+   Ouptut:
+    triangle is valid
+*/#include <stdio.h>
+int main()
+{
+    int anga, angb, angc, sum, flag;
+    scanf("%d %d %d", &anga, &angb, &angc); /* Three angles are given as input from test case */
+if((anga+angb+angc)==180)
+  flag=1;
+else
+   flag=0;
+if (flag == 1)
+    {
+        printf("The triangle is valid.");
+    }
+    else
+    {
+        printf("The triangle is not valid.");
+    }
+ }
