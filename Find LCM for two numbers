@@ -1,0 +1,23 @@
+/*
+To find LCM of two Numbers
+ Input:
+   4,16
+ OUTPUT:
+  LCM=16
+*/
+#include <stdio.h>
+int main()
+{
+int Num1, Num2, LCM; 
+scanf("%d %d", &Num1, &Num2); /*Two integer value Num1 and Num2 is entered from test case and LCM is the output */
+
+int i,gcd;
+for(i=1;i<=Num1 && i<=Num2;i++)
+{
+ if(Num1%i==0 && Num2%i==0)
+    gcd=i;
+}
+LCM=(Num1*Num2)/gcd;
+
+printf("LCM  = %d", LCM);
+}
