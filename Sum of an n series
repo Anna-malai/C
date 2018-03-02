@@ -1,0 +1,13 @@
+/*
+INPUT: n=6
+OUTPUT:  123456.
+*/#include <stdio.h>
+void main()
+{
+  int n, i; /* n is number of terms as input from test case and i is a variable*/
+  long sum=0; /* sum is a variable to store the sum and give as output */
+  scanf("%d",&n); /*Input the number of terms */
+for(i=1;i<=n;i++)
+  sum=sum*10+i;
+printf("%ld",sum);
+}
