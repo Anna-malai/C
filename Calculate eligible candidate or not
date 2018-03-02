@@ -1,0 +1,21 @@
+/*
+  Condition:  Student should be scored toatlly 180 marks and 
+  they should scored greater than 55 in physics and 
+  greater than 65 in maths 
+  greater than 50 in chemistry in indivually
+*/
+#include <stdio.h>
+int main()
+{
+int p,c,m, flag=0;
+scanf("%d %d %d",&p, &c, &m); /* Input the marks obtained in Physics, Chemistry and Maths */
+if((m>=65 && p>=55 && c>=50) || ((p+c+m)>180))
+   flag=1;
+else
+   flag=0;
+if (flag == 1)
+    printf("The candidate is eligible");
+else
+    printf("The candidate is not eligible");
+
+}
