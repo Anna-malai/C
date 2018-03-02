@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() 
+{
+int j,n, array[50], largest, second;
+for(j=0;j<5;++j)
+scanf("%d",&array[j]); /*storing the elements of array from test case */
+largest=array[0];
+  for(j=1;j<5;j++)
+{
+     if(array[j]>largest)
+         largest=array[j];
+}
+second=array[0];
+  for(j=1;j<5;j++)
+   {
+     if(array[j]<largest && array[j]>second)
+          second=array[j];
+   }
+    printf("Largest - %d, Second - %d", largest, second);   
+
+}
