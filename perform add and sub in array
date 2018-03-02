@@ -1,0 +1,46 @@
+/*To perform addition and subraction and store in third and fourth array  from first and second array
+a1={1,2,3,4,5}
+a2={3,4,5,6,7}
+a3={4,6,8,10,12}
+a4={2,2,2,2,2}
+*/
+#include <stdio.h>
+
+int main()
+{
+        int arr1[5];
+        int arr2[5];
+        int arr3[5];
+        int arr4[5];
+        int i=0;
+
+         /*Read array elements*/
+        for (i=0; i<n; i++)
+        {
+                scanf("%d",&arr1[i]);
+        }
+        
+        for (i=0; i<n; i++)
+        {
+                scanf("%d",&arr2[i]);
+        }
+int k;
+for(i=0;i<n;i++)
+{
+  arr3[k]=arr1[i]+arr2[i];
+  arr4[k]=arr1[i]-arr2[i];
+  k++;
+  for (i=0; i<n; i++)
+        {
+          printf("%d\n",arr3[i]);
+        }
+printf("\n");
+for (i=0; i<n; i++)
+        {
+          printf("%d\n",arr4[i]);
+        }
+
+return 0;
+}
+
+}
