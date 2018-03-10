@@ -1,0 +1,36 @@
+/*
+Input array: 10 20 30 40 20
+Output: 20 repeated at index 4
+*/
+#include <stdio.h>
+        int main()
+        {
+                int arr[5];
+                int i,j,n=5;
+                int ind=-1,ele; /* to store index & element */
+
+                /* read array elements */
+                for(i=0; i<n; i++)
+        {
+                        scanf("%d",&arr[i]);
+                }
+                for(i=0; i<=n-1; i++)
+{
+ 
+  for(j=i+1; j<=n;j++)
+  {
+   if(arr[i]==arr[j])
+   {
+     ind=j;
+     ele=arr[j];
+     break;
+   }
+ 
+  }
+}
+if(ind!=-1)
+printf("%d repeated at index %d\n",ele,ind);
+                else
+                        printf("There is no repeated element\n");
+
+        }
